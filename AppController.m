@@ -92,6 +92,7 @@
 	[toolbar setShowsBaselineSeparator:YES];
 	[toolbar setVisible:![[NSUserDefaults standardUserDefaults] boolForKey:@"ToolbarHidden"]];
 	[toolbar setDelegate:self];
+	[window setToolbarStyle:NSWindowToolbarStyleExpanded];
 	[window setToolbar:toolbar];
 	
 	[window setShowsToolbarButton:NO];
