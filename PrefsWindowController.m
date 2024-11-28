@@ -432,6 +432,7 @@
     [toolbar setDelegate:self];
     [toolbar setAllowsUserCustomization:NO];
     [toolbar setAutosavesConfiguration:NO]; 
+	[window setToolbarStyle:NSWindowToolbarStylePreference];
     [window setToolbar:toolbar];
     [toolbar release];  //setToolbar retains the toolbar we pass, so release the one we used.
 	
