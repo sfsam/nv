@@ -95,6 +95,8 @@
 	[window setToolbarStyle:NSWindowToolbarStyleExpanded];
 	[window setToolbar:toolbar];
 	
+	[window setTabbingMode:NSWindowTabbingModeDisallowed];
+
 	[window setShowsToolbarButton:NO];
 	titleBarButton = [[TitlebarButton alloc] initWithFrame:NSMakeRect(0, 0, 17.0, 17.0) pullsDown:YES];
 	[titleBarButton addToWindow:window];
